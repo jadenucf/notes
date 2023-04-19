@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Home from './screens/Home';
 import Custom from './screens/Custom';
+import Notes from './screens/Notes';
 
 export default function App() {
   const Stack = createNativeStackNavigator()
@@ -21,6 +22,10 @@ export default function App() {
       <Stack.Screen
         name='Custom'
         component={Custom}
+      />
+      <Stack.Screen
+        name='Notes'
+        component={Notes}
       />
     </Stack.Navigator>
     </NavigationContainer>
