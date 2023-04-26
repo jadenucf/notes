@@ -30,6 +30,8 @@ export default function Custom({navigation}) {
       }
     }
 
+
+
   return (
     <View style={styles.container}>
       <Text>hmm</Text>
@@ -46,6 +48,7 @@ export default function Custom({navigation}) {
             letters: choices
           })
         }}
+        disabled={(choices.length <= 1) ? true : false}
       />
       <StatusBar style="auto" />
     </View>
