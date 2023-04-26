@@ -9,6 +9,7 @@ import Home from './screens/Home';
 import Custom from './screens/Custom';
 import Notes from './screens/Notes';
 
+
 export default function App() {
   const Stack = createNativeStackNavigator()
 
@@ -38,6 +39,16 @@ export const styles = StyleSheet.create({
       // backgroundColor: '#fff',
       // alignItems: 'center',
       // justifyContent: 'center',
-      margin: '1em'
+      margin: 10,
+    height: 300,
+
   },
+  staff: {
+    // flex: 1,
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    margin: 10,
+    height: 300,
+  }
 });
