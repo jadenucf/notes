@@ -5,6 +5,7 @@ import { styles } from '../App';
 import { StatusBar } from 'expo-status-bar';
 
 
+
 export default function Custom({navigation}) {
   const letters = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G','G#', 'A', 'A#', 'B']
 
@@ -34,7 +35,7 @@ export default function Custom({navigation}) {
 
   return (
     <View style={styles.container}>
-      <Text>hmm</Text>
+      <Text>Choose the notes (minimum: 2 notes)</Text>
       <ButtonGroup
         buttons={letters}
         selectedIndexes={choicesIndex}
@@ -54,11 +55,3 @@ export default function Custom({navigation}) {
     </View>
   )
 }
-
-          // <ButtonGroup
-          //   buttons={letters}
-          //   selectedIndexes={choicesIndex}
-          //   onPress={(value)=>{
-          //     handlePress(value)
-          //   }}
-          // />
